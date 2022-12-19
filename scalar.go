@@ -33,6 +33,9 @@ type (
 	// This type is most often used by GraphQL to represent free-form
 	// human-readable text.
 	String string
+
+	// Int64 is a scalar for int64
+	Int64 int64
 )
 
 // NewBoolean is a helper to make a new *Boolean.
@@ -49,3 +52,6 @@ func NewInt(v Int) *Int { return &v }
 
 // NewString is a helper to make a new *String.
 func NewString(v String) *String { return &v }
+
+// NewInt64 is a helper to make a new *Int64.
+func NewInt64(v Int64) *Int64 { return &v }

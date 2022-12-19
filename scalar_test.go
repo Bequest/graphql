@@ -27,4 +27,7 @@ func TestNewScalars(t *testing.T) {
 	if got := graphql.NewString(""); got == nil {
 		t.Error("NewString returned nil")
 	}
+	if got := graphql.NewInt64(0); got == nil {
+		t.Error("NewInt64 returned nil")
+	}
 }
